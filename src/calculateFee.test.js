@@ -1,4 +1,4 @@
-import calculateFee from '.'
+import calculateFee from './calculateFee'
 
 describe('calculateFee', () => {
     it('Should return the amount with fee', () => {
@@ -9,6 +9,11 @@ describe('calculateFee', () => {
     it('Should return the amount without fee', () => {
         const amount  = 300
         const amountWithFee = 300
+        expect(calculateFee(amount)).toBe(amountWithFee)
+    })
+    it('Should return the amount without fee', () => {
+        const amount  = 500
+        const amountWithFee = 500
         expect(calculateFee(amount)).toBe(amountWithFee)
     })
 })
