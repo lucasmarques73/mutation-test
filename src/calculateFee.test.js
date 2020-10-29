@@ -11,9 +11,4 @@ describe('calculateFee', () => {
         const amountWithFee = 300
         expect(calculateFee(amount)).toBe(amountWithFee)
     })
-    it('Should return the amount without fee', () => {
-        const amount  = 500
-        const amountWithFee = 500
-        expect(calculateFee(amount)).toBe(amountWithFee)
-    })
 })
